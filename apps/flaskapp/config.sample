@@ -1,0 +1,5 @@
+'''
+Config
+'''
+#Settingファイル
+SECRET_KEY = 'secretkey'
