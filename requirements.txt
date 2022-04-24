@@ -1,0 +1,6 @@
+Flask
+Flask-bootstrap4
+flask_bootstrap
+pylint
+Flask-session
+azure-cosmosdb-table
