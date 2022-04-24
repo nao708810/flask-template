@@ -1,7 +1,7 @@
 {% extends "bootstrap/base.html" %}
 
 {% block title %}
-Sample
+投票アプリ
 {%- endblock title %}
 
 {% block meta -%}
@@ -20,27 +20,15 @@ Sample
 <div class="container">
 {% block navbar %}
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
     <div class="container">
       <a class="navbar-brand" href="./">
-        <h1>
-        Sample
-        </h1>
+        <h3>
+        投票アプリ
+        </h3>
       </a>
     </div>
   </nav>
-  <div class="container">
-    <div class="jumbotron">
-      <div class="page-header" id="banner">
-          <div class="row my-4">
-            <div class="col-12 text-white">
-              <h1 class="display-3">Sample</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </header>
 {%- endblock navbar %}
 
@@ -53,17 +41,15 @@ lauout
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="/static/js/bootstrap.min.js"></script>
 {%- endblock scripts %}
-<div class="container">
-<footer class="small">
+<footer class="Medium">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        &copy; 2019 flask
+        &copy; 2022  古渡二次会 F-1グランプリ
       </div>
     </div>
   </div>
 </footer>
-</div>
 </div>
 {% endblock %}
 

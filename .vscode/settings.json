@@ -1,5 +1,4 @@
 {
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.pythonPath": "env\\Scripts\\python.exe"
+    "appService.defaultWebAppToDeploy": "/subscriptions/b1a45538-191d-4b16-a1b3-faa09a4c065a/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/F-1SecondaryParty",
+    "appService.deploySubpath": "."
 }

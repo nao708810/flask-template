@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block content %}
+</br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="bs-component text-center">
+            <form action="{{ url_for('vote') }}" method=post>
+                <fieldset>
+                <div class="form-group">
+                    <label><h4 class='text-info'>ニックネーム</h4></label>
+                    <input type="txt" class="form-control" name=userid value={{userid}}>
+                </div>
+                </br>
+                <div class="form-group">
+                    <label><h4 class='text-info'>問題番号</h4></label>
+                    <select class="form-control" id="questionNo" name="question">
+                        {% for q in list_q %}
+                        <option value={{q["num"]}} {{q["select"]}}>{{q["num"]}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                </br>
+                <div class="form-group">
+                    <label><h4 class='text-info'>回答</h4></label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="RadioA" name="radio" value=1 class="custom-control-input" checked>
+                        <label class="custom-control-label" for="RadioA"><h4>　【　A　】　</h4></label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="RadioB" name="radio" value=2 class="custom-control-input">
+                        <label class="custom-control-label" for="RadioB"><h4>　【　B　】　</h4></label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="RadioC" name="radio" value=3 class="custom-control-input">
+                        <label class="custom-control-label" for="RadioC"><h4>　【　C　】　</h4></label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="RadioD" name="radio" value=4 class="custom-control-input">
+                        <label class="custom-control-label" for="RadioD"><h4>　【　D　】　</h4></label>
+                    </div>
+                </div>
+                </br>
+                <button type="submit" class="btn btn-primary" value="login">送信</button>
+                <p class="text-danger">{{ message }}</p>
+                </fieldset>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
